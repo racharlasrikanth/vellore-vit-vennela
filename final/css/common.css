@@ -1,63 +1,149 @@
-/* margin classes */
-.marginTopMobile-ten {
-  margin-top: 10px !important;
+/* featured-courses */
+.single-course {
+  width: 100%;
+  background: var(--clr-white);
+  height: 100%;
+  box-shadow: var(--box-shadow-light);
+  border-radius: var(--radius);
+  transition: var(--transition);
 }
-.marginTopMobile-twenty {
-  margin-top: 20px !important;
+.single-course:hover {
+  transform: translateY(-2px) scale(1.002);
+  box-shadow: var(--box-shadow-dark);
 }
-.marginTopMobile-thirty {
-  margin-top: 30px !important;
+.single-course .img-container {
+  aspect-ratio: 355/250;
+  overflow: hidden;
 }
-.marginTopMobile-forty {
-  margin-top: 40px !important;
+.single-course .img-container img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  object-fit: cover;
 }
-.marginTopMobile-fifty {
-  margin-top: 50px !important;
+.single-course .course-title p {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--clr-primary);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.marginBottomMobile-ten {
-  margin-bottom: 10px !important;
+@media screen and (min-width: 992px) {
+  .single-course .img-container {
+    aspect-ratio: 396/300;
+  }
 }
-.marginBottomMobile-twenty {
-  margin-bottom: 20px !important;
-}
-.marginBottomMobile-thirty {
-  margin-bottom: 30px !important;
-}
-.marginBottomMobile-forty {
-  margin-bottom: 40px !important;
-}
-.marginBottomMobile-fifty {
-  margin-bottom: 50px !important;
+
+/* layout classes */
+.three-column-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 @media screen and (min-width: 769px) {
-  .marginTopDesktop-ten {
-    margin-top: 10px !important;
+  .three-column-layout {
+    grid-template-columns: 1fr 1fr;
   }
-  .marginTopDesktop-twenty {
-    margin-top: 20px !important;
+}
+@media screen and (min-width: 992px) {
+  .three-column-layout {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .marginTopDesktop-thirty {
-    margin-top: 30px !important;
+}
+
+/* padding classes */
+.paddingTopMobile-ten {
+  padding-top: 10px !important;
+}
+.paddingTopMobile-twenty {
+  padding-top: 20px !important;
+}
+.paddingTopMobile-thirty {
+  padding-top: 30px !important;
+}
+.paddingTopMobile-forty {
+  padding-top: 40px !important;
+}
+.paddingTopMobile-fifty {
+  padding-top: 50px !important;
+}
+.paddingBottomMobile-ten {
+  padding-bottom: 10px !important;
+}
+.paddingBottomMobile-twenty {
+  padding-bottom: 20px !important;
+}
+.paddingBottomMobile-thirty {
+  padding-bottom: 30px !important;
+}
+.paddingBottomMobile-forty {
+  padding-bottom: 40px !important;
+}
+.paddingBottomMobile-fifty {
+  padding-bottom: 50px !important;
+}
+@media screen and (min-width: 769px) {
+  .paddingTopDesktop-ten {
+    padding-top: 10px !important;
   }
-  .marginTopDesktop-forty {
-    margin-top: 40px !important;
+  .paddingTopDesktop-twenty {
+    padding-top: 20px !important;
   }
-  .marginTopDesktop-fifty {
-    margin-top: 50px !important;
+  .paddingTopDesktop-thirty {
+    padding-top: 30px !important;
   }
-  .marginBottomDesktop-ten {
-    margin-bottom: 10px !important;
+  .paddingTopDesktop-forty {
+    padding-top: 40px !important;
   }
-  .marginBottomDesktop-twenty {
-    margin-bottom: 20px !important;
+  .paddingTopDesktop-fifty {
+    padding-top: 50px !important;
   }
-  .marginBottomDesktop-thirty {
-    margin-bottom: 30px !important;
+  .paddingTopDesktop-sixty {
+    padding-top: 60px !important;
   }
-  .marginBottomDesktop-forty {
-    margin-bottom: 40px !important;
+  .paddingTopDesktop-seventy {
+    padding-top: 70px !important;
   }
-  .marginBottomDesktop-fifty {
-    margin-bottom: 50px !important;
+  .paddingTopDesktop-eighty {
+    padding-top: 80px !important;
+  }
+  .paddingTopDesktop-ninety {
+    padding-top: 90px !important;
+  }
+  .paddingTopDesktop-hundred {
+    padding-top: 100px !important;
+  }
+  .paddingBottomDesktop-ten {
+    padding-bottom: 10px !important;
+  }
+  .paddingBottomDesktop-twenty {
+    padding-bottom: 20px !important;
+  }
+  .paddingBottomDesktop-thirty {
+    padding-bottom: 30px !important;
+  }
+  .paddingBottomDesktop-forty {
+    padding-bottom: 40px !important;
+  }
+  .paddingBottomDesktop-fifty {
+    padding-bottom: 50px !important;
+  }
+  .paddingBottomDesktop-sixty {
+    padding-bottom: 60px !important;
+  }
+  .paddingBottomDesktop-seventy {
+    padding-bottom: 70px !important;
+  }
+  .paddingBottomDesktop-eighty {
+    padding-bottom: 80px !important;
+  }
+  .paddingBottomDesktop-ninety {
+    padding-bottom: 90px !important;
+  }
+  .paddingBottomDesktop-hundred {
+    padding-bottom: 100px !important;
   }
 }

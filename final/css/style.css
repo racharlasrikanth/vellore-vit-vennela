@@ -6,13 +6,15 @@
   --clr-white-light: #f0f0f0;
   --clr-shadow: #00000029;
   --clr-black: #333333;
+  --clr-black-30: rgba(34, 32, 32, 0.3);
   --clr-black-80: #222020cc;
   --clr-black-90: #212020e6;
   --clr-pink-light: #fdf2f2;
   --clr-blue-light: #f2fdfb;
 
   --transition: all 0.3s linear;
-  --box-shadow: 0px 3px 7px var(--clr-shadow);
+  --box-shadow-light: 0px 3px 7px var(--clr-shadow);
+  --box-shadow-dark: 0px 3px 7px var(--clr-black-30);
   --font-family: Arial, Helvetica, sans-serif;
   --radius: 4px;
 }
@@ -57,6 +59,30 @@ img {
 .display-block {
   display: block !important;
 }
+.text-container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--clr-primary);
+}
+.section-title .underline {
+  width: 60px;
+  height: 5px;
+  background: var(--clr-primary);
+  margin-left: auto;
+  margin-right: auto;
+}
+.display-inline-flex {
+  width: unset !important;
+  display: inline-flex !important;
+}
 .light-pink-background {
   background: var(--clr-pink-light);
 }
@@ -69,7 +95,6 @@ img {
 .button-primary-light {
   font-weight: bold;
   border: none;
-  font-weight: bold;
   border: none;
   cursor: pointer;
   height: 45px;
@@ -80,6 +105,10 @@ img {
   letter-spacing: 1px;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
 }
 .button-primary-dark {
   background: var(--clr-primary);
