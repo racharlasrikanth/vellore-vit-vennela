@@ -1,0 +1,63 @@
+/* margin classes */
+.marginTopMobile-ten {
+  margin-top: 10px !important;
+}
+.marginTopMobile-twenty {
+  margin-top: 20px !important;
+}
+.marginTopMobile-thirty {
+  margin-top: 30px !important;
+}
+.marginTopMobile-forty {
+  margin-top: 40px !important;
+}
+.marginTopMobile-fifty {
+  margin-top: 50px !important;
+}
+.marginBottomMobile-ten {
+  margin-bottom: 10px !important;
+}
+.marginBottomMobile-twenty {
+  margin-bottom: 20px !important;
+}
+.marginBottomMobile-thirty {
+  margin-bottom: 30px !important;
+}
+.marginBottomMobile-forty {
+  margin-bottom: 40px !important;
+}
+.marginBottomMobile-fifty {
+  margin-bottom: 50px !important;
+}
+@media screen and (min-width: 769px) {
+  .marginTopDesktop-ten {
+    margin-top: 10px !important;
+  }
+  .marginTopDesktop-twenty {
+    margin-top: 20px !important;
+  }
+  .marginTopDesktop-thirty {
+    margin-top: 30px !important;
+  }
+  .marginTopDesktop-forty {
+    margin-top: 40px !important;
+  }
+  .marginTopDesktop-fifty {
+    margin-top: 50px !important;
+  }
+  .marginBottomDesktop-ten {
+    margin-bottom: 10px !important;
+  }
+  .marginBottomDesktop-twenty {
+    margin-bottom: 20px !important;
+  }
+  .marginBottomDesktop-thirty {
+    margin-bottom: 30px !important;
+  }
+  .marginBottomDesktop-forty {
+    margin-bottom: 40px !important;
+  }
+  .marginBottomDesktop-fifty {
+    margin-bottom: 50px !important;
+  }
+}

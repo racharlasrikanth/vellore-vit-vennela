@@ -1,0 +1,119 @@
+/* global variables */
+:root {
+  --clr-primary: #3777aa;
+  --clr-primary-light: #2284d3;
+  --clr-white: #ffffff;
+  --clr-white-light: #f0f0f0;
+  --clr-shadow: #00000029;
+  --clr-black: #333333;
+  --clr-black-80: #707070;
+  --clr-black-90: #212020e6;
+  --clr-pink-light: #fdf2f2;
+  --clr-blue-light: #f2fdfb;
+
+  --transition: all 0.3s linear;
+  --box-shadow: 0px 3px 7px var(--clr-shadow);
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global Styles */
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+*:focus {
+  outline-width: 2px;
+  outline-offset: 1px;
+  outline-color: var(--clr-primary);
+}
+body {
+  color: var(--clr-black);
+  background: var(--clr-white);
+  font-family: var(--font-family);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+
+/* global classes */
+.wrapper {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.display-block {
+  display: block !important;
+}
+.light-pink-background {
+  background: var(--clr-pink-light);
+}
+.light-blue-background {
+  background: var(--clr-blue-light);
+}
+
+/* buttons & inputs */
+.button-primary-dark,
+.button-primary-light {
+  font-weight: bold;
+  border: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  height: 45px;
+  width: 100%;
+  transition: var(--transition);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button-primary-dark {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+}
+.button-primary-light {
+  background: var(--clr-white);
+  color: var(--clr-primary);
+}
+.button-primary-dark:hover {
+  background: var(--clr-primary-light);
+}
+.button-primary-light:hover {
+  background: var(--clr-white-light);
+}
+.primary-input {
+  height: 45px;
+  font-size: 16px;
+  line-height: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  border: 1px solid var(--clr-shadow);
+  background: var(--clr-white);
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 769px) {
+  .button-primary-dark,
+  .button-primary-light {
+    height: 50px;
+    width: unset;
+    min-width: 220px;
+  }
+  .primary-input {
+    height: 50px;
+  }
+}
