@@ -67,3 +67,79 @@
     transform: translate(-50%, -50%);
   }
 }
+
+/* our campuses section && each campus */
+.each-campus {
+  width: 100%;
+  border-radius: var(--radius);
+  background: var(--clr-white);
+  box-shadow: var(--box-shadow-light);
+  transition: var(--transition);
+}
+.each-campus:hover {
+  box-shadow: var(--box-shadow-dark);
+  transform: translateY(-2px) scale(1.002);
+}
+.each-campus .img-container {
+  aspect-ratio: 355/250;
+  position: relative;
+}
+.each-campus .img-container .share-icon-campus {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 50%);
+  background: var(--clr-white);
+  border-radius: 50%;
+  border: 7px solid var(--clr-pink-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: var(--transition);
+}
+.each-campus .img-container .share-icon-campus:hover {
+  border-color: var(--clr-blue-light);
+  background: var(--clr-pink-light);
+}
+.each-campus .img-container .share-icon-campus img {
+  width: 100%;
+}
+.each-campus .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.each-campus .campus-info {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.each-campus .campus-info .campus-title {
+  font-size: 22px;
+  text-transform: capitalize;
+  color: var(--clr-primary);
+  letter-spacing: 1px;
+}
+.each-campus .campus-info .desc {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.each-campus .campus-info .address {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--clr-primary);
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 992px) {
+  .each-campus .img-container {
+    aspect-ratio: 396/250;
+  }
+}
