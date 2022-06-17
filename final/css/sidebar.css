@@ -1,7 +1,7 @@
 /* sidebar styles */
 .sidebar-container {
   width: 100%;
-  background: var(--clr-black-90);
+  background: var(--clr-black);
   position: fixed;
   top: 0;
   left: -100%;
@@ -9,6 +9,7 @@
   transition: var(--transition);
   /* transform: translateX(-100%); */
   opacity: 0;
+  z-index: 10;
 }
 .sidebar-container.show-sidebar {
   opacity: 1;
