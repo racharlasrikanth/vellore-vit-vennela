@@ -4,15 +4,16 @@
   background: var(--clr-black-90);
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   height: 100vh;
   transition: var(--transition);
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
   opacity: 0;
 }
 .sidebar-container.show-sidebar {
   opacity: 1;
-  transform: translateX(0%);
+  /* transform: translateX(0%); */
+  left: 0%;
 }
 .sidebar-container .logo-section {
   width: 30px;
