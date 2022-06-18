@@ -55,37 +55,39 @@
 }
 
 /* padding classes */
-.paddingTopMobile-ten {
-  padding-top: 10px !important;
+@media screen and (max-width: 991px) {
+  .paddingTopMobile-ten {
+    padding-top: 10px !important;
+  }
+  .paddingTopMobile-twenty {
+    padding-top: 20px !important;
+  }
+  .paddingTopMobile-thirty {
+    padding-top: 30px !important;
+  }
+  .paddingTopMobile-forty {
+    padding-top: 40px !important;
+  }
+  .paddingTopMobile-fifty {
+    padding-top: 50px !important;
+  }
+  .paddingBottomMobile-ten {
+    padding-bottom: 10px !important;
+  }
+  .paddingBottomMobile-twenty {
+    padding-bottom: 20px !important;
+  }
+  .paddingBottomMobile-thirty {
+    padding-bottom: 30px !important;
+  }
+  .paddingBottomMobile-forty {
+    padding-bottom: 40px !important;
+  }
+  .paddingBottomMobile-fifty {
+    padding-bottom: 50px !important;
+  }
 }
-.paddingTopMobile-twenty {
-  padding-top: 20px !important;
-}
-.paddingTopMobile-thirty {
-  padding-top: 30px !important;
-}
-.paddingTopMobile-forty {
-  padding-top: 40px !important;
-}
-.paddingTopMobile-fifty {
-  padding-top: 50px !important;
-}
-.paddingBottomMobile-ten {
-  padding-bottom: 10px !important;
-}
-.paddingBottomMobile-twenty {
-  padding-bottom: 20px !important;
-}
-.paddingBottomMobile-thirty {
-  padding-bottom: 30px !important;
-}
-.paddingBottomMobile-forty {
-  padding-bottom: 40px !important;
-}
-.paddingBottomMobile-fifty {
-  padding-bottom: 50px !important;
-}
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   .paddingTopDesktop-ten {
     padding-top: 10px !important;
   }

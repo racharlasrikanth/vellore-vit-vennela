@@ -13,3 +13,16 @@
   hamburger.addEventListener("click", openSidebar);
   sidebarCloseButton.addEventListener("click", closeSidebar);
 })();
+
+// sticky sidebar
+(function () {
+  const navbarContainer = document.querySelector(".nav-container");
+  window.addEventListener("scroll", function () {
+    let targetNumber = this.innerWidth >= 992 ? 70 : 50;
+    if (this.scrollY >= targetNumber) {
+      navbarContainer.classList.add("sticky-nav");
+    } else {
+      navbarContainer.classList.remove("sticky-nav");
+    }
+  });
+})();

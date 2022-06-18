@@ -88,9 +88,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.display-inline-flex {
-  width: unset !important;
-  display: inline-flex !important;
+.full-width {
+  width: 100%;
 }
 .light-pink-background {
   background: var(--clr-pink-light);
@@ -107,14 +106,14 @@ img {
   border: none;
   cursor: pointer;
   height: 45px;
-  width: 100%;
   transition: var(--transition);
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-left: 20px;
   padding-right: 20px;
-  display: flex;
+  min-width: 200px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: var(--radius);
@@ -149,7 +148,6 @@ img {
   .button-primary-dark,
   .button-primary-light {
     height: 50px;
-    width: unset;
     min-width: 220px;
   }
   .primary-input {
