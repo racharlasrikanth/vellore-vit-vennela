@@ -186,3 +186,8 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+@media screen and (min-width: 992px) {
+  .each-facility .img-container {
+    aspect-ratio: 396/300;
+  }
+}
