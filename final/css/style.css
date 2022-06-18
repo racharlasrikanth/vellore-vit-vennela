@@ -88,8 +88,15 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.full-width {
-  width: 100%;
+@media screen and (max-width: 991px) {
+  .full-width-mobile {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .full-width-desktop {
+    width: 100%;
+  }
 }
 .light-pink-background {
   background: var(--clr-pink-light);
@@ -132,7 +139,8 @@ img {
 .button-primary-light:hover {
   background: var(--clr-white-light);
 }
-.primary-input {
+.primary-input,
+.primary-textarea {
   height: 45px;
   font-size: 16px;
   line-height: 25px;
@@ -142,6 +150,12 @@ img {
   border: 1px solid var(--clr-shadow);
   background: var(--clr-white);
   letter-spacing: 1px;
+  font-family: var(--font-family);
+}
+.primary-textarea {
+  height: unset;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 769px) {
