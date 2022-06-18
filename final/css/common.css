@@ -110,6 +110,8 @@
   color: var(--clr-primary);
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media screen and (min-width: 992px) {
   .single-course .img-container {
