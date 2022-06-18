@@ -145,3 +145,44 @@
     aspect-ratio: 396/250;
   }
 }
+
+/* our facilities section card styles */
+.each-facility {
+  width: 100%;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow-light);
+  transition: var(--transition);
+}
+.each-facility:hover {
+  box-shadow: var(--box-shadow-dark);
+  transform: translateY(-2px) scale(1.002);
+}
+.each-facility .img-container {
+  aspect-ratio: 355/250;
+  overflow: hidden;
+}
+.each-facility .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.each-facility .facility-info .facility-title {
+  font-size: 22px;
+  color: var(--clr-primary);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.each-facility .facility-info .facility-desc {
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
