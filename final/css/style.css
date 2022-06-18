@@ -156,6 +156,7 @@ img {
   height: unset;
   padding-top: 15px;
   padding-bottom: 15px;
+  resize: vertical;
 }
 
 @media screen and (min-width: 769px) {
@@ -166,5 +167,15 @@ img {
   }
   .primary-input {
     height: 50px;
+  }
+}
+
+/* animations */
+@keyframes bounceAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.02);
   }
 }

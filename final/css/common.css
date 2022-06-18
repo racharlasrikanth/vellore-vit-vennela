@@ -76,6 +76,9 @@
   .page-hero-container .small-heading {
     font-size: 34px;
   }
+  .page-hero-container .home-button {
+    animation: bounceAnimation linear 3s infinite alternate;
+  }
 }
 
 /* featured-courses */
@@ -101,6 +104,7 @@
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   object-fit: cover;
+  transition: var(--transition);
 }
 .single-course .course-title p {
   font-size: 22px;
@@ -116,6 +120,9 @@
 @media screen and (min-width: 992px) {
   .single-course .img-container {
     aspect-ratio: 396/300;
+  }
+  .single-course:hover img {
+    transform: scale(1.05) rotateZ(2deg);
   }
 }
 

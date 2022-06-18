@@ -100,6 +100,7 @@
   object-fit: cover;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
+  transition: var(--transition);
 }
 .each-facility .facility-info .facility-title {
   font-size: 22px;
@@ -121,5 +122,8 @@
 @media screen and (min-width: 992px) {
   .each-facility .img-container {
     aspect-ratio: 396/300;
+  }
+  .each-facility:hover img {
+    transform: scale(1.05) rotateZ(-2deg);
   }
 }
