@@ -50,5 +50,6 @@
   border-radius: var(--radius);
 }
 .sidebar-container .sidebar-content .nav-link.active {
-  background: var(--clr-black-90);
+  background: var(--clr-white-light);
+  color: var(--clr-black);
 }

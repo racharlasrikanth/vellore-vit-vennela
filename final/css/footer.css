@@ -37,7 +37,8 @@
   letter-spacing: 1px;
   font-weight: bold;
 }
-.footer-container .footer-link:hover {
+.footer-container .footer-link:hover,
+.footer-container .footer-link.active {
   color: var(--clr-white-light);
   text-decoration: underline;
   transition: var(--transition);

@@ -17,9 +17,11 @@
   transition: var(--transition);
 }
 .nav-center {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .nav-links-main {
   display: none;
@@ -29,10 +31,18 @@
 }
 .nav-container .hamburger {
   width: 25px;
+  display: flex;
+  justify-self: flex-end;
+}
+.nav-social-links-main {
+  display: none;
 }
 @media screen and (min-width: 992px) {
   .nav-container {
     min-height: 70px;
+  }
+  .nav-center {
+    grid-template-columns: repeat(3, 1fr);
   }
   .nav-container .logo-section {
     width: 50px;
@@ -60,6 +70,33 @@
   .nav-container .nav-link.active,
   .nav-container .nav-link:hover {
     transition: var(--transition);
-    background: var(--clr-black-90);
+    background: var(--clr-white-light);
+    color: var(--clr-black);
+  }
+  .nav-social-links-main {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-social-links-main .nav-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .nav-social-links-main .nav-social-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--clr-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-social-links-main .nav-social-link:hover {
+    transition: var(--transition);
+    transform: translateY(-3px);
+  }
+  .nav-social-links-main img {
+    width: 14px;
   }
 }
